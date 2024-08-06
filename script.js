@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const DOMNumberOfTriesInput = document.getElementById("number-of-tries-input");
     const blueColorHex = '#007bff';
     const orangeColorHex = '#f59e42';
-    const redColorHex = 'red';
+    const redColorHex = '#ff4c4c';
     const lastTriesKey = 'AudioTest_LastTries';
     const settingsKey = 'AudioTest_Settings';
 
