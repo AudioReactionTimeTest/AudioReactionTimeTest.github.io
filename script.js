@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
         audio: {
             volume: 0.5,
             frequency: 260,
-            type: 'sine'
+            type: 'square'
         },
         test: {
             numberOfTries: 5,
