@@ -12,7 +12,7 @@
 <body>
     <div id="play-beep" class="container">
         <div>
-            <h1 id="title">Audio Reaction Time Test</h1>
+            <h1 id="title">Audio Reaction Time Test - Measure Your Reaction Speed</h1>
             <h2 id="message1">When the beep sound click as fast as you can.</h2>
             <h2 id="message2">Click to begin.</h2>
         </div>
@@ -52,9 +52,38 @@
             <h2>Settings</h2>
             <p>Audio settings:</p>
             <ul>
-                <li>Minimum delay: 2 seconds</li>
-                <li>maximum delay: 5 seconds</li>
-                <li>number of tries: 5</li>
+                <li>
+                    <label for="wave-select">Wave type:</label>
+                    <select id="wave-select">
+                        <option value="sine">Sine</option>
+                        <option value="square">Square</option>
+                        <option value="sawtooth">Sawtooth</option>
+                        <option value="triangle">Triangle</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="pitch-input">Pitch:</label>
+                    <input type="number" id="pitch-input" value="260" min="20" max="20000" step="1">
+                </li>
+                <li>
+                    <label for="volume-input">Volume:</label>
+                    <input type="number" id="volume-input" value="1" min="0" max="1" step="0.01">
+                </li>
+            </ul>
+            <p>Test settings:</p>
+            <ul>
+                <li>
+                    <label for="minimum-delay-input">Minimum delay:</label>
+                    <input type="number" id="minimum-delay-input" value="3" min="0" max="60" step="1">
+                </li>
+                <li>
+                    <label for="maximum-delay-input">Maximum delay:</label>
+                    <input type="number" id="maximum-delay-input" value="12" min="0" max="60" step="1">
+                </li>
+                <li>
+                    <label for="number-of-tries-input">Number of tries:</label>
+                    <input type="number" id="number-of-tries-input" value="5" min="1" max="100" step="1">
+                </li>
             </ul>
         </div>
     </div>
