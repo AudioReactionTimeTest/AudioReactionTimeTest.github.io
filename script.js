@@ -39,8 +39,8 @@ document.addEventListener('DOMContentLoaded', function () {
     if (jsonArray)
         lastTries = JSON.parse(jsonArray);
 
-    document.addEventListener('click', () => { oscillator.start() }, { once: true });
-    DOMplayButton.addEventListener('click', handleClick);
+    document.addEventListener('mousedown', () => { oscillator.start() }, { once: true });
+    DOMplayButton.addEventListener('mousedown', handleClick);
     document.addEventListener('keydown', (handleSpacebarPress));
     createTriesList();
 
