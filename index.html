@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Reaction Time Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="play-beep" class="container">
+        <div>
+            <h1 id="title">Audio Reaction Time Test</h1>
+            <h2 id="message1">When the beep sound click as fast as you can.</h2>
+            <h2 id="message2">Click to begin.</h2>
+        </div>
+    </div>
+
+    <div class="cards-container">
+        <div class="card">
+            <h2>Last tries</h2>
+            <ul id="tries-list">
+                <li>250 ms</li>
+                <li>270 ms</li>
+                <li>290 ms</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h2>About the test</h2>
+
+            <p>
+                This is a simple tool to measure your audio reaction time.
+            </p>
+            <p>
+                The average reaction time is about 221 ms for mens and 235 ms for womens, according to this <a
+                    href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4456887/">study</a>.
+            </p>
+            <p>
+                In addition to measuring your reaction time, this test is affected by the latency of your audio system
+                and computer.
+            </p>
+            <p>
+                Using a wireless headset or Bluetooth headphones may significantly increase the delay.
+            </p>
+            <p>
+                Also a higher and louder sound may decrease your reaction time.
+            </p>
+        </div>
+        <div class="card">
+            <h2>Settings</h2>
+            <p>Audio settings:</p>
+            <ul>
+                <li>Minimum delay: 2 seconds</li>
+                <li>maximum delay: 5 seconds</li>
+                <li>number of tries: 5</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
